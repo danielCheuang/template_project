@@ -1,0 +1,54 @@
+{
+  "server":{
+    "name":"api getaway",
+    "run_mode":"debug",
+    "listen_addr":"0.0.0.0:8083",
+    "limit_connection":0,
+    "root_router_prefix":"api",
+    "enable_https":false,
+    "https_addr":"",
+    "read_timeout":60,
+    "write_timeout":60,
+    "idle_timeout":120,
+    "max_header_bytes":1048576
+  },
+  "tls":{
+    "cert_file":"",
+    "key_file":""
+  },
+  "mysql":{
+    "enable":true,
+    "host":"127.0.0.1",
+    "port":"3306",
+    "user":"root",
+    "password":"123456",
+    "db_name":"testdb",
+    "table_prefix":"",
+    "max_open_connections":0,
+    "max_idle_connections":0,
+    "conn_max_lifetime":0,
+    "local":"Asia%2FShanghai",
+    "debug":true
+  },
+  "redis":{
+    "enable":true,
+    "host":"127.0.0.1",
+    "port":"6379",
+    "password":"",
+    "idle_timeout":20,
+    "max_idle":10,
+    "max_active":25
+  },
+  "logger":{
+    "level":"debug",
+    "formatter":"json",
+    "disable_console":true,
+    "write":false,
+    "path":"./logs",
+    "file_name":"daily",
+    "max_age":24,
+    "rotation_time":168,
+    "debug":false
+  }
+
+}
